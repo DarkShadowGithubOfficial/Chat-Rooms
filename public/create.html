@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .form-container {
+        width: 30%;
+        padding: 40px;
+        background-color: #f2f2f2;
+        margin: 0 auto;
+        border-radius: 8px;
+    }
+
+    .form-input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+
+    .form-button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .form-button:hover {
+        background-color: #45a049;
+    }
+</style>
+  <form action="/create-room" class="form-container" method='post'>
+    <input type="text" name="room" placeholder="Room Name" class="form-input">
+    <input type="number" name="pin" placeholder="Room Pin/Password" class="form-input">
+    <input type="submit" value="Create Room" class="form-button">
+  </form>
+</body>
+</html>
